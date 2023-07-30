@@ -118,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 tvmain.setText("");
+                tvsec.setText(" ");
 
             }
         }));
@@ -137,6 +138,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }));
+        bsub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvmain.setText(tvmain.getText()+"-");
+            }
+        });
         bsqrt.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
